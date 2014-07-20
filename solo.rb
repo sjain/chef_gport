@@ -1,5 +1,6 @@
-
-  file_cache_path "/home/ubuntu/chef"
-  cookbook_path "/home/ubuntu/chef/cookbooks"
-  json_attribs "/home/ubuntu/chef/node.json"
-
+current_dir = File.expand_path(File.dirname(__FILE__))
+file_cache_path "#{current_dir}"
+cookbook_path "#{current_dir}/cookbooks"
+role_path "#{current_dir}/roles"
+data_bag_path "#{current_dir}/data_bags"
+# json_attribs "/home/ubuntu/chef/node.json"
