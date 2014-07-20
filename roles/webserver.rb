@@ -1,6 +1,9 @@
+
+name "webserver"
+
+description "Systems that serve HTTP and HTTPS"
+
 run_list(
-  "recipe[ntp]",
-  "recipe[build-essential::default]",
   "recipe[apache2]",
   "recipe[apache2::mod_ssl]"
 )

@@ -1,4 +1,4 @@
 
 {
-  "run_list": [ "recipe[ntp]", "recipe[build-essential::default]" ]
+  "run_list": [ "recipe[ntp]", "recipe[build-essential::default]", "role[webserver]"  ]
 }
