@@ -12,7 +12,7 @@ default_attributes(
   "apache" => {
     "listen_ports" => ["80", "443"],
     "default_modules" => [
-      "statusZZZZ",
+      "status",
       "alias",
       "auth_basic",
       "authn_file",
